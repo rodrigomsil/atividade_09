@@ -1,14 +1,13 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Empregado {
 	
 
 	private String nome;
 	private int horas;
 	private double  valorPorHora;
+
+	public static final double salario_minimo = 1100.0;
 
 	public Empregado() {
 		
@@ -61,6 +60,7 @@ public class Empregado {
 
 	public double realizarPagamento() {
 		Double valor = 0.0; 
+		valor = (horas * valorPorHora) > salario_minimo ? horas * valorPorHora : salario_minimo;
 		return valor;
  
 	}
