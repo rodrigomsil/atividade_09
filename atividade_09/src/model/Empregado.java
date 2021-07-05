@@ -62,7 +62,7 @@ public class Empregado {
 	public double realizarPagamento() {
 		Double valor = 0.0; 
 		return valor;
-
+ 
 	}
 
 	
