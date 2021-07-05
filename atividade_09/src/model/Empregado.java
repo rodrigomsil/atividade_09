@@ -43,7 +43,7 @@ public class Empregado {
 	public void setHoras(int horas) {
 		
 		if (horas > 40) {
-			throw new RuntimeException(
+			throw new IllegalArgumentException(
 					"Horas trabalhadas por funcionários deve ser de ate 40 horas mensais.");
 		}
 		
@@ -60,7 +60,7 @@ public class Empregado {
 
 	public void setValorPorHora(double valorPorHora) {
 		if (valorPorHora < 30.00 && valorPorHora > 200.00) {
-			throw new RuntimeException(
+			throw new IllegalArgumentException(
 					"O valor por Hora valido esta entre R$30,00 e R$200,00");
 		}
 		this.valorPorHora = valorPorHora;
