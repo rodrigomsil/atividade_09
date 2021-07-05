@@ -59,7 +59,10 @@ public class Empregado {
 
 
 	public void setValorPorHora(double valorPorHora) {
-		
+		if (valorPorHora < 30.00 && valorPorHora > 200.00) {
+			throw new RuntimeException(
+					"O valor por Hora valido esta entre R$30,00 e R$200,00");
+		}
 		this.valorPorHora = valorPorHora;
 	}
 
