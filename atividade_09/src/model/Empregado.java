@@ -41,6 +41,12 @@ public class Empregado {
 
 
 	public void setHoras(int horas) {
+		
+		if (horas > 40) {
+			throw new RuntimeException(
+					"Horas trabalhadas por funcionários deve ser de ate 40 horas mensais.");
+		}
+		
 		this.horas = horas;
 	}
 
@@ -53,6 +59,7 @@ public class Empregado {
 
 
 	public void setValorPorHora(double valorPorHora) {
+		
 		this.valorPorHora = valorPorHora;
 	}
 
