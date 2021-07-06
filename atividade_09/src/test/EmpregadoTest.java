@@ -24,7 +24,7 @@ public class EmpregadoTest {
 	 **/
 	
 	@Test
-	public void abaixoDoSalarioMinimo() throws horasException {
+	public void abaixoDoSalarioMinimo() {
 		empregado.setHoras(15);
 		empregado.setValorPorHora(70);
 		assertEquals(1100.0, empregado.realizarPagamento(), 0.0001);
@@ -35,7 +35,7 @@ public class EmpregadoTest {
 	 **/
 	
 	@Test
-	public void acimaDoSalarioMinimo() throws horasException {
+	public void acimaDoSalarioMinimo() {
 		empregado.setHoras(10);
 		empregado.setValorPorHora(140);
 		assertEquals(1400.0, empregado.realizarPagamento(), 0.0001);
