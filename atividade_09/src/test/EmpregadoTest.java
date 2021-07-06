@@ -60,7 +60,7 @@ public class EmpregadoTest {
 	@Test
 	public void horasAcimaPermitido() throws horasException {
 		empregado.setHoras(42);
-		assertEquals(42, empregado.getHoras());
+		assertEquals(40, empregado.getHoras());
 	}
 
 
