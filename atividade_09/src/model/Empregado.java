@@ -44,7 +44,7 @@ public class Empregado {
 		
 		if (horas > 40) {
 			throw new IllegalArgumentException(
-					"Horas trabalhadas por funcionários deve ser de ate 40 horas mensais.");
+					"As Horas trabalhadas por funcionários deve ser de ate 40 horas mensais.");
 		}
 		
 		this.horas = horas;
